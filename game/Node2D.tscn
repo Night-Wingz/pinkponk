@@ -3,6 +3,11 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2( 10, 541 )
-scale = Vector2( 0.858225, 2.22499 )
+position = Vector2( 29, 628.19 )
+scale = Vector2( 0.858225, 2.91252 )
 polygon = PoolVector2Array( 123, -135, 123, -121.472, 123, -105, 146, -105, 145.854, -119.302, 146, -135 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2( 935, 384 )
+scale = Vector2( 1.00731, 2.35135 )
+polygon = PoolVector2Array( -36.2998, -63.0976, -36.2998, -26.0976, -17.2998, -26.0976, -17.2998, -63.0976 )

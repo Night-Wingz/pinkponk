@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( -64, 142.624 )
+scale = Vector2( 0.858225, 2.22499 )
+polygon = PoolVector2Array( 123, -135, 123, -105, 146, -105, 145.854, -119.302, 146, -135 )

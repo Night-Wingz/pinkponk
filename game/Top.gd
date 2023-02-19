@@ -6,7 +6,11 @@ func _process(delta):
 	position += speed.rotated(rotation) * delta
 
 
-func _on_Area2D_body_entered(body):
+
+
+
+
+func _on_Top_body_entered(body):
 	rotation = -rotation
 	speed = -speed
 	rotation_degrees += rand_range(90,-90)

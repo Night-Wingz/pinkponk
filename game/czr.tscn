@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://oyuncu1.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -12,7 +12,19 @@ extents = Vector2( 31, 31 )
 extents = Vector2( 31, 31 )
 
 [sub_resource type="CircleShape2D" id=3]
-radius = 19.2354
+radius = 21.0
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 16.5533, 263.694 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 14.7968, 261.558 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 528, 18.5 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 524.5, 18 )
 
 [node name="Ana sahne" type="Node2D"]
 
@@ -51,3 +63,27 @@ position = Vector2( 1, -3 )
 rotation = -3.14159
 scale = Vector2( 0.477414, -0.488762 )
 texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1.38939, 301.654 )
+rotation = -0.0183513
+scale = Vector2( 1, 1 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1015.8, 306.589 )
+rotation = -0.00917903
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 507, 11.5 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 508.5, 594 )
+shape = SubResource( 7 )
+
+[connection signal="body_entered" from="Top" to="Top" method="_on_Top_body_entered"]

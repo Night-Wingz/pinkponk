@@ -1,6 +1,6 @@
 extends Area2D
 
-var speed = Vector2(200,0)
+export var speed = Vector2(200,0)
 
 func _process(delta):
 	position += speed.rotated(rotation) * delta
